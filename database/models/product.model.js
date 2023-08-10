@@ -13,10 +13,6 @@ const productSchema = mongoose.Schema({
         required: [true, 'product price is required'],
         min: 0
     },
-    priceAfterDiscount: {
-        type: Number,
-        min: 0
-    },
     description: {
         type: String,
         minLength: [5, 'too short product description'],
